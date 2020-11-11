@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <h3>Hello</h3>
+    <h4> {{ name }} </h4>
+    <h4> {{ last_name }} </h4>
+    <h4> {{ user.username }} </h4>
+    {% if user.is_superuser %}
+    <h2> {{ user.username }} in if statement</h2>
+    {% endif %}
+</head>
+<body>
+    <h1>Hello world</h1>
+    <br>
+    <p>Hello world my nname is davide and i want to help you.</p>
+
+</body>
+</html>

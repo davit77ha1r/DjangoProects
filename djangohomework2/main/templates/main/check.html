@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        body{background-color : #845FFA;}
+        #info{ font-family: Marker Felt, fantasy;
+        color : white; }
+        #a{color: white;}
+        #back{color: white;}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checking login</title>
+</head>
+<body>
+<a href="http://127.0.0.1:8000/" id="back">Back</a>
+    <h1 id="info">Checking are you signed in?</h1>
+    {% if user.username %}
+    <h2>{{user.username}} welcome! Tou are signed in. And now you can get more functions to use.</h2>
+    <a href="http://127.0.0.1:8000/admin/logout/" id="back">logout</a>
+    {% else %}
+    <h2>You arent logined   please <a id="a" href="http://127.0.0.1:8000/admin/login/?next=/admin/">login  here</a> and return to this page to see more info</h2>
+    {% endif %}
+
+</body>
+</html>

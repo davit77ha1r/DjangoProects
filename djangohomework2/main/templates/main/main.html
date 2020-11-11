@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        body {background-color: black;}
+
+        #welcome_text{
+            font-family: Impact, Charcoal, sans-serif;
+            text-align: center;
+            animation: mymove 5s alternate;
+            color: red;
+            }
+        #listUrl{
+            color : red;
+        }
+        #telling_text{
+           color: #FF6410;
+           animation: mymove2 3s alternate;
+           margin-left:30vw;
+        }
+        .urls {
+            text-decoration: none;
+            color : red;
+            font-family: Marker Felt, fantasy;
+        }
+        .urls:hover{
+            color: orange;
+        }
+        @keyframes mymove {
+                from {color: black;}
+                to {color : red ;}
+           }
+        @keyframes mymove2 {
+                from {margin-left:0vw;}
+                to {margin-left:30vw;}
+           }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MySite</title>
+</head>
+<body>
+    <h1 id="welcome_text">Welcome to our site</h1>
+    <h3 id="telling_text"= >Hy, welcome to my website, here is all paths of my website click on it or write it after main URL</h3>
+    <ul id="listUrl">
+        <li><a  class="urls" href="json">json - makes json file readable</a></li>
+        <li> <a  class="urls" href="check">check - checks are you signed in</a></li>
+        <li><a  class="urls" href="task">task - show task answer</a></li>
+    </ul>
+</body>
+</html>
