@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            padding: 0px;
+            margin : 0px;
+            background-color: #F7F7F7;
+        }
+        header {
+            width : 100%;
+            margin : 0px;
+            padding : 2%;
+            height: 40%;
+            background-color: #006262;
+        }
+        .main_page{
+            margin:0px;
+            font-family: Impact, Charcoal, sans-serif ;
+            font-size: 30px;
+        }
+        #refresh{
+            text-decoration: none;
+            color: #53BEAC;
+            margin-right: 0px ;
+            display: inline-block;
+        }
+        #refresh:hover{
+            color: #5FDAC5;
+        }
+        .log{
+            text-decoration: none;
+            color: #53BEAC;
+            font-family: Impact, Charcoal, sans-serif ;
+            margin-left: 80vw;
+
+        }
+        #main_div{
+            display: flex;
+        }
+        #wrapper{
+            float: left;
+            width: 100%;
+
+        }
+        #articles {
+            float: left;
+            width: 80%;
+            margin-left: 10%;
+        }
+        article{
+            background-color: green;
+            float: left;
+            width: 31.33333%
+            border: 1px solid silver;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background-color: green;
+            margin-right: 2%;
+            min-width: 400px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<div>
+    <header><div class="main_div">
+        <a href="" id="refresh"> <h4 class="main_page">Main Page</h4></a>
+        {% if user.username %}
+        <a add target="_blank" href="http://127.0.0.1:8000/admin/logout" class="log">Logout</a>
+        {% else %}
+        <a add target="_blank" href="http://127.0.0.1:8000/admin/login/?next=/admin/" class="log">Login</a>
+        {% endif %}
+    </div></header>
+    <div id="wrapper">
+        <div id="articles">
+            <article>
+            </article>
+            <article>
+            </article>
+            <article>
+            </article>
+        </div>
+    </div>
+</body>
+</html>
